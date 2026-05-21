@@ -44,6 +44,8 @@ The agent:
 4. Returns the five sections, quoting `rotate-prod-db-creds.sh` and
    `15 minutes` byte-for-byte from the document body.
 
+**Live demo:** https://gemini-elastic-agent-1029931682737.us-central1.run.app
+
 ## Quickstart (stub mode, zero cloud setup)
 
 ```sh
