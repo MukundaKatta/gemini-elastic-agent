@@ -36,7 +36,10 @@ class AskResponse(BaseModel):
 
 
 @app.get("/healthz")
+@app.get("/health")
 def healthz() -> dict[str, str]:
+    # Cloud Run's frontend has been observed to intercept /healthz on some
+    # routings, so /health is exposed as an alias that always reaches us.
     return {"status": "ok"}
 
 
